@@ -120,7 +120,7 @@ export class ResultsComponent implements OnInit {
       return;
     } else {
       if (age < 8) {
-        discountPrice = (distance * 2) * 0.3;
+        discountPrice = (distance * 2) * 0.7;
       } else {
         discountPrice = distance * 2;
       }
@@ -146,7 +146,7 @@ export class ResultsComponent implements OnInit {
       return;
     } else {
       if(age < 16) {
-        discountPrice = distance * 4 * 0.2;
+        discountPrice = distance * 4 * 0.8;
       } else {
         discountPrice = distance * 4
       }
