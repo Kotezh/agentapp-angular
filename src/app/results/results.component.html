@@ -1,0 +1,21 @@
+<section class="results">
+  <h2 class="results__title">Предложения:</h2>
+  <div class="results__wrapper">
+    <div class="results__group">
+      <h3 class="results__subtitle">Аэрофлот</h3>
+      <ul class="results__list results__list_type_plane" id="list-plane">
+        <li class="results__list-item" *ngIf="planeEconom">Эконом: {{planeEconom}} ₽</li>
+        <li class="results__list-item" *ngIf="planeAdvance">Продвинутый: {{planeAdvance}} ₽</li>
+        <li class="results__list-item" *ngIf="planeLux">Люкс: {{planeLux}} ₽</li>
+      </ul>
+    </div>
+    <div class="results__group">
+      <h3 class="results__subtitle">РЖД</h3>
+      <ul class="results__list results__list_type_train" id="list-train">
+        <li class="results__list-item" *ngIf="trainEconom">Эконом: {{trainEconom}} &#8381;</li>
+        <li class="results__list-item" *ngIf="trainAdvance">Продвинутый: {{trainAdvance}} ₽</li>
+        <li class="results__list-item" *ngIf="trainLux">Люкс: {{trainLux}} ₽</li>
+      </ul>
+    </div>
+  </div>
+</section>

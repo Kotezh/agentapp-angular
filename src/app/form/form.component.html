@@ -1,0 +1,16 @@
+<form class="form" name="form" [formGroup]="mainForm" (ngSubmit)="onSubmit()">
+  <fieldset class="form__fieldset">
+    <label for="distance" class="form__label">
+      <span class="form__label-text">Количество километров</span>
+      <input formControlName="distance" id="distance" name="distance" class="form__input" type="number" [(ngModel)]="distance"></label>
+
+    <label for="age" class="form__label">
+      <span class="form__label-text">Возраст</span>
+      <input formControlName="age" id="age" name="age" class="form__input" type="number" [(ngModel)]="age"></label>
+
+    <label for="weight" class="form__label">
+      <span class="form__label-text">Вес багажа</span>
+      <input formControlName="weight" id="weight" name="weight" class="form__input" type="number" [(ngModel)]="weight"></label>
+  </fieldset>
+  <button [disabled]="!(distance && age && weight)" type="submit" class="form__btn" >Рассчитать</button>
+</form>
